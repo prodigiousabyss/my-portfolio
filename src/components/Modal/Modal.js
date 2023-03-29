@@ -1,9 +1,19 @@
+import { crafts } from "../../constants/data";
 import { Icon } from "../Icon";
 
-export const Modal = ({ show, setShow, children }) => {
+export const Modal = ({ show, setShow, children, setCurrentCraftIndex }) => {
   if (!show) {
     return null;
   }
+
+
+const previous = () => {
+  setCurrentCraftIndex((value) => value !== 0 ? value - 1 : crafts.length - 1);
+};
+
+const next = () => {
+  setCurrentCraftIndex((value) => value === crafts.length - 1 ? 0 : value + 1);
+}
 
   return (
     <div
@@ -24,7 +34,7 @@ export const Modal = ({ show, setShow, children }) => {
         style={{
           width: "58rem",
           height: "80%",
-          overflow: "hidden",
+          overflow: "visible",
           display: "flex",
           alignItems: "center",
           backgroundColor: "white",
@@ -46,6 +56,10 @@ export const Modal = ({ show, setShow, children }) => {
           />
         </div>
         {children}
+        <div onClick={previous}> <Icon name="previous" 
+        style={{ position: "absolute", left: "0", width: "2rem", top: "6rem"}}/></div>
+        <div  onClick={next}> <Icon name="next" 
+        style={{ position: "absolute", right: "0", width: "2rem", top: "6rem"}}/></div>
       </div>
     </div>
   );

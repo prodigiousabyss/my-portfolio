@@ -4,13 +4,13 @@ import { crafts } from "../../constants/data";
 
 export const Crafts = () => {
   const [show, setShow] = useState(false);
-  const [currentCraft, setCurrentCraft] = useState();
+  const [currentCraftIndex, setCurrentCraftIndex] = useState();
 
   return (
     <div style={{ color: "white" }}>
-      <Modal show={show} setShow={setShow}>
+      <Modal show={show} setShow={setShow} setCurrentCraftIndex={setCurrentCraftIndex}>
         <img
-          src={currentCraft?.preview}
+          src={crafts[currentCraftIndex]?.preview}
           alt="project"
           style={{
             maxWidth: "100%",
@@ -28,13 +28,13 @@ export const Crafts = () => {
           gap: "2rem",
         }}
       >
-        {crafts.map((project) => {
+        {crafts.map((project, index) => {
           return (
             <div className="craft" key={project.id}>
               <div
                 onClick={() => {
                   setShow(true);
-                  setCurrentCraft(project);
+                  setCurrentCraftIndex(index);
                 }}
               >
                 <img
