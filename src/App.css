@@ -1,38 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+}
+
 .App {
-  text-align: center;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.zoom {
+  margin-left: 1.2rem;
+  margin-right: 1.2rem;
+  /* width: 3.2rem;
+  height: 3.2rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+}
+/* .zoom:hover {
+  transform: scale(1.4);
+} */
+.zoom svg {
+  transition: transform .2s;
+}
+.zoom svg:hover {
+  transform: scale(1.2);
 }
 
-.App-link {
-  color: #61dafb;
+.zoomNavbar {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  transition: transform .2s;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.zoomNavbar:hover{
+  transform: scale(1.2);
+}
+.active .dot {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background-color: #2F3331;
+  margin-top: 0.4rem;
+  position: absolute;
+  bottom: -1rem;
+}
+.craft {
+  transition: transform .2s;
+}
+.craft:hover{
+  transform: scale(0.9);
 }
