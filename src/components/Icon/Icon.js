@@ -6,7 +6,8 @@ import { Behance } from "./Svg/Behance";
 import { Cross } from "./Svg/Cross";
 import { next } from "./Svg/next";
 import { previous } from "./Svg/previous";
-
+import { Code } from "./Svg/Code";
+import { Github } from "./Svg/Github";
 
 const iconMap = {
   Home: Home,
@@ -17,6 +18,8 @@ const iconMap = {
   Cross: Cross,
   next: next,
   previous: previous,
+  Code: Code,
+  Github: Github,
 };
 
 export const Icon = ({ name, style }) => {

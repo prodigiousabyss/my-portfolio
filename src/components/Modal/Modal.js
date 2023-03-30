@@ -6,14 +6,17 @@ export const Modal = ({ show, setShow, children, setCurrentCraftIndex }) => {
     return null;
   }
 
+  const previous = () => {
+    setCurrentCraftIndex((value) =>
+      value !== 0 ? value - 1 : crafts.length - 1
+    );
+  };
 
-const previous = () => {
-  setCurrentCraftIndex((value) => value !== 0 ? value - 1 : crafts.length - 1);
-};
-
-const next = () => {
-  setCurrentCraftIndex((value) => value === crafts.length - 1 ? 0 : value + 1);
-}
+  const next = () => {
+    setCurrentCraftIndex((value) =>
+      value === crafts.length - 1 ? 0 : value + 1
+    );
+  };
 
   return (
     <div
@@ -56,10 +59,30 @@ const next = () => {
           />
         </div>
         {children}
-        <div onClick={previous}> <Icon name="previous" 
-        style={{ position: "absolute", left: "0", width: "2rem", top: "6rem"}}/></div>
-        <div  onClick={next}> <Icon name="next" 
-        style={{ position: "absolute", right: "0", width: "2rem", top: "6rem"}}/></div>
+        <div onClick={previous}>
+          {" "}
+          <Icon
+            name="previous"
+            style={{
+              position: "absolute",
+              left: "0",
+              width: "2rem",
+              top: "6rem",
+            }}
+          />
+        </div>
+        <div onClick={next}>
+          {" "}
+          <Icon
+            name="next"
+            style={{
+              position: "absolute",
+              right: "0",
+              width: "2rem",
+              top: "6rem",
+            }}
+          />
+        </div>
       </div>
     </div>
   );

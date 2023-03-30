@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { Icon } from "../Icon";
+import { Tooltip } from "../Tooltip/Tooltip";
+import "../Tooltip/Tooltip.css";
 
 export const Navbar = () => {
   return (
@@ -22,18 +24,28 @@ export const Navbar = () => {
         zIndex: "10",
       }}
     >
-      <NavLink className="zoom" to="/">
-        <Icon name="Home" style={{ height: "2.8rem" }} />
-        <div className="dot"></div>
-      </NavLink>
-      <NavLink className="zoom" to="/crafts">
-        <Icon name="Rocket" style={{ height: "2.8rem" }} />
-        <div className="dot"></div>
-      </NavLink>
-      <NavLink className="zoom" to="/projects">
-        <Icon name="Bulb" style={{ height: "2.8rem" }} />
-        <div className="dot"></div>
-      </NavLink>
+      <Tooltip content="Home">
+        <span className="tooltiptext">
+          <NavLink className="zoom" to="/">
+            <Icon name="Home" style={{ height: "2.8rem" }} />
+            <div className="dot"></div>
+          </NavLink>
+        </span>
+      </Tooltip>
+      <Tooltip content="Designs">
+        <span className="tooltiptext"></span>
+        <NavLink className="zoom" to="/crafts">
+          <Icon name="Rocket" style={{ height: "2.8rem" }} />
+          <div className="dot"></div>
+        </NavLink>
+      </Tooltip>
+      <Tooltip content="Projects">
+        <span className="tooltiptext"></span>
+        <NavLink className="zoom" to="/projects">
+          <Icon name="Code" style={{ height: "3.2rem" }} />
+          <div className="dot"></div>
+        </NavLink>
+      </Tooltip>
       <div
         style={{
           width: "0.1rem",
@@ -43,24 +55,42 @@ export const Navbar = () => {
           marginRight: "1rem",
         }}
       ></div>
-      <a
-        className="zoom"
-        href="https://www.behance.net/prodigiousabyss"
-        target="_blank"
-        rel="noreferrer"
-      >
-        {" "}
-        <Icon name="Behance" style={{ width: "4rem", height: "4rem" }} />
-      </a>
-      <a
-        className="zoom"
-        href="https://twitter.com/prodigiousabyss"
-        target="_blank"
-        rel="noreferrer"
-      >
-        {" "}
-        <Icon name="Twitter" style={{ width: "3rem", height: "3rem" }} />
-      </a>
+      <Tooltip content="Behance">
+        <span className="tooltiptext"></span>
+        <a
+          className="zoom"
+          href="https://www.behance.net/prodigiousabyss"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          <Icon name="Behance" style={{ width: "4rem", height: "4rem" }} />
+        </a>
+      </Tooltip>
+      <Tooltip content="Github">
+        <span className="tooltiptext"></span>
+        <a
+          className="zoom"
+          href="https://github.com/prodigiousabyss"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          <Icon name="Github" style={{ width: "3rem", height: "3rem" }} />
+        </a>
+      </Tooltip>
+      <Tooltip content="Twitter">
+        <span className="tooltiptext"></span>
+        <a
+          className="zoom"
+          href="https://twitter.com/prodigiousabyss"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          <Icon name="Twitter" style={{ width: "3rem", height: "3rem" }} />
+        </a>
+      </Tooltip>
     </div>
   );
 };

@@ -1,0 +1,37 @@
+
+
+.tooltip {
+    display: inline-block;
+    color: white;
+        background-color: #3B3B3B;
+        position: absolute;
+        top: -1.3rem;
+        text-align: center;
+        /* left: 2.4rem; */
+        border-radius: 0.3rem;
+        font-size: smaller;
+        width: 4rem;
+        padding: 0.3rem;
+        margin-left: 0.4rem;
+}
+
+.tooltip:after {
+    content: "";
+    position:absolute;
+    
+    /* position tooltip correctly */
+    left:100%;
+    margin-left:-3rem;
+   
+    /* vertically center */
+    bottom: -1rem;
+    align-items: center;
+
+   
+    /* the arrow */
+    border:10px solid grey;
+    border-color: #3B3B3B transparent transparent transparent;
+    
+    display:block;
+  }
+  

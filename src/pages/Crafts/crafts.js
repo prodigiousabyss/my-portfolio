@@ -8,7 +8,11 @@ export const Crafts = () => {
 
   return (
     <div style={{ color: "white" }}>
-      <Modal show={show} setShow={setShow} setCurrentCraftIndex={setCurrentCraftIndex}>
+      <Modal
+        show={show}
+        setShow={setShow}
+        setCurrentCraftIndex={setCurrentCraftIndex}
+      >
         <img
           src={crafts[currentCraftIndex]?.preview}
           alt="project"
