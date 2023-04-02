@@ -1,9 +1,11 @@
 import { Route, Routes } from "react-router";
 import { Navbar } from "./components/Navbar";
-import { Crafts } from "./pages/Crafts";
 import { Home } from "./pages/Home";
-import { Projects } from "./pages/Projects";
+import { Crafts } from "./pages/Crafts";
+import { ToDoList } from "./pages/ToDoList";
+import { Code } from "./pages/Code/Code";
 import "./App.css";
+import { Designs } from "./pages/Designs/Designs";
 
 function App() {
   return (
@@ -11,8 +13,10 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/crafts" element={<Crafts />} />
-        <Route path="/projects" element={<Projects />} />
+        <Route path="/designs" element={<Designs />} />
+        <Route path="/designs/crafts" element={<Crafts />} />
+        <Route path="/codingProjects" element={<Code />} />
+        <Route path="/codingProjects/toDoList" element={<ToDoList />} />
         {/* <Route path="*" /> */}
       </Routes>
     </div>

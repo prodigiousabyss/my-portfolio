@@ -34,14 +34,14 @@ export const Navbar = () => {
       </Tooltip>
       <Tooltip content="Designs">
         <span className="tooltiptext"></span>
-        <NavLink className="zoom" to="/crafts">
+        <NavLink className="zoom" to="/designs">
           <Icon name="Rocket" style={{ height: "2.8rem" }} />
           <div className="dot"></div>
         </NavLink>
       </Tooltip>
-      <Tooltip content="Projects">
+      <Tooltip content="Code">
         <span className="tooltiptext"></span>
-        <NavLink className="zoom" to="/projects">
+        <NavLink className="zoom" to="/codingProjects">
           <Icon name="Code" style={{ height: "3.2rem" }} />
           <div className="dot"></div>
         </NavLink>
