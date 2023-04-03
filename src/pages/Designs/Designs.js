@@ -8,7 +8,6 @@ export const Designs = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "4rem",
         }}
       >
         <div>

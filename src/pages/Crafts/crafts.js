@@ -7,7 +7,7 @@ export const Crafts = () => {
   const [currentCraftIndex, setCurrentCraftIndex] = useState();
 
   return (
-    <div style={{ color: "white" }}>
+    <div style={{ color: "white", height: "100vh", overflowY: "auto" }}>
       <Modal
         show={show}
         setShow={setShow}
@@ -27,7 +27,7 @@ export const Crafts = () => {
       <div
         style={{
           color: "white",
-          padding: "2rem 4rem",
+          padding: "2rem 4rem 12rem",
           columns: 3,
           gap: "2rem",
         }}
