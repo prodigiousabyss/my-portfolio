@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const Designs = () => {
   return (
+    <div>
     <NavLink to="/designs/crafts">
       <div
         style={{
@@ -11,22 +12,29 @@ export const Designs = () => {
         }}
       >
         <div>
-          <button
-            style={{
-              width: "40rem",
-              height: "3rem",
-              fontSize: "large",
-              borderRadius: "0.5rem",
-              border: "none",
-              textAlign: "left",
-              color: "black",
-              backgroundColor: "grey",
-            }}
+          <button className="button"
           >
             Crafts
           </button>
         </div>
       </div>
     </NavLink>
+    <NavLink to="/designs/projects">
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <div>
+        <button className="button"
+        >
+          Projects
+        </button>
+      </div>
+    </div>
+  </NavLink>
+  </div>
   );
 };

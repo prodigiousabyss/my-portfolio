@@ -47,41 +47,83 @@ export const Modal = ({ show, setShow, children, setCurrentCraftIndex }) => {
         }}
       >
         <div onClick={() => setShow(false)}>
+          <button 
+          style={{
+            borderRadius: "50%",
+            backgroundColor: "white",
+            width: "2.5rem",
+            height: "2.5rem",
+            position: "absolute",
+            top: "-0.5rem",
+            right: "-3rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          >
           <Icon
             name="Cross"
             style={{
-              width: "2rem",
-              height: "2rem",
-              position: "absolute",
-              top: "0.5rem",
-              right: "0.5rem",
+              width: "1.5rem",
+              height: "1.5rem",
+            //   position: "absolute",
+            //   top: "-0.5rem",
+            //   right: "-3rem",
             }}
           />
+          </button>
         </div>
         {children}
         <div onClick={previous}>
           {" "}
+          <button 
+          style={{
+            borderRadius: "50%",
+            backgroundColor: "white",
+            width: "2.5rem",
+            height: "2.5rem",
+            position: "absolute",
+            left: "-3rem",
+            top: "18rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          >
           <Icon
             name="previous"
             style={{
-              position: "absolute",
+              // position: "absolute",
               left: "0",
               width: "2rem",
-              top: "6rem",
             }}
           />
+          </button>
         </div>
         <div onClick={next}>
           {" "}
+          <button 
+          style={{
+            borderRadius: "50%",
+            backgroundColor: "white",
+            width: "2.5rem",
+            height: "2.5rem",
+            position: "absolute",
+            right: "-3rem",
+            top: "18rem",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          >
           <Icon
             name="next"
             style={{
-              position: "absolute",
-              right: "0",
+              // position: "absolute",
               width: "2rem",
-              top: "6rem",
             }}
           />
+          </button>
         </div>
       </div>
     </div>

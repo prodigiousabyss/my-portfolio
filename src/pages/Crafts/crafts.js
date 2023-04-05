@@ -22,7 +22,6 @@ export const Crafts = () => {
             borderRadius: "2rem",
           }}
         />
-        {/* <button onClose={() => setShow(false)}>close</button> */}
       </Modal>
       <div
         style={{
@@ -46,13 +45,12 @@ export const Crafts = () => {
                   alt="project"
                   style={{
                     maxWidth: "100%",
-                    marginTop: "2rem",
                     height: "auto",
-                    borderRadius: "1.2rem",
+                    padding: "0.4rem",
+                    borderRadius: "1rem",
                   }}
                 />
               </div>
-              {/* <button style={{ width: "100%", height: "2rem" }}>info</button> */}
             </div>
           );
         })}

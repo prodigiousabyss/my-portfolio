@@ -3,7 +3,7 @@
 .tooltip {
     display: inline-block;
     color: white;
-        background-color: #3B3B3B;
+        background-color: black;
         position: absolute;
         top: -1.3rem;
         text-align: center;
@@ -12,26 +12,16 @@
         font-size: smaller;
         width: 4rem;
         padding: 0.3rem;
-        margin-left: 0.4rem;
+        margin-left: 0.5rem;
 }
 
 .tooltip:after {
-    content: "";
-    position:absolute;
-    
-    /* position tooltip correctly */
-    left:100%;
-    margin-left:-3rem;
-   
-    /* vertically center */
-    bottom: -1rem;
-    align-items: center;
-
-   
-    /* the arrow */
-    border:10px solid grey;
-    border-color: #3B3B3B transparent transparent transparent;
-    
-    display:block;
-  }
-  
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
