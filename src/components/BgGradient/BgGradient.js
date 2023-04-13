@@ -1,9 +1,20 @@
 import { Gradient, GradientCanvas } from "shadergradient";
 
 export const BgGradient = () => {
-    return (
-        <div style={{ position: "absolute", top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
-      <GradientCanvas style={{ width: '100%', height: '100%', pointerEvents: 'none' }}>
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        width: "100%",
+        height: "100%",
+        zIndex: -1,
+      }}
+    >
+      <GradientCanvas
+        style={{ width: "100%", height: "100%", pointerEvents: "none" }}
+      >
         <Gradient
           cDistance={3.4}
           cPolarAngle={90}
@@ -21,19 +32,19 @@ export const BgGradient = () => {
           toggleAxis={false}
           envPreset="dawn"
           cameraAngle={{
-            cAzimuthAngle: 180, 
-            cPolarAngle: 90
+            cAzimuthAngle: 180,
+            cPolarAngle: 90,
           }}
           cameraZoom={1}
           grain="on"
           lightType="3d"
           uAmplitude={0.1}
-  uSpeed={0.3}
-  uTime={0}
-  urlString=""
-  zoomOut={true}
+          uSpeed={0.3}
+          uTime={0}
+          urlString=""
+          zoomOut={true}
         />
       </GradientCanvas>
-      </div>
-    )
-}
+    </div>
+  );
+};

@@ -90,20 +90,21 @@ html, body {
 } */
 
 .Button {
-  background-color:#e7e7e7; color: grey; 
+  /* background-color: #DDDDDD;  */
   border-radius: 12px;
-  border: none;
+  width: 40rem;
+  border: 2px solid #3F403F;
   color: black;
   padding: 15px 32px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-    transition-duration: 0.4s;
+  font-size: 1.4rem;
+  transition-duration: 0.4s;
   }
   
   .Button:hover {
-    background-color: grey; 
+    background-color: black; 
     color: white;
   }
 

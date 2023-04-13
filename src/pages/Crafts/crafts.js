@@ -6,31 +6,28 @@ export const Crafts = () => {
   const [show, setShow] = useState(false);
   const [currentCraftIndex, setCurrentCraftIndex] = useState();
 
+  const previous = () => {
+    setCurrentCraftIndex((value) =>
+      value !== 0 ? value - 1 : crafts.length - 1
+    );
+  };
+
+  const next = () => {
+    setCurrentCraftIndex((value) =>
+      value === crafts.length - 1 ? 0 : value + 1
+    );
+  };
+
   return (
     <div style={{ color: "white", height: "100vh", overflowY: "auto" }}>
-      <Modal
-        show={show}
-        setShow={setShow}
-        setCurrentCraftIndex={setCurrentCraftIndex}
-      >
+      <Modal show={show} setShow={setShow} previous={previous} next={next}>
         <img
+          className="max-w-full max-h-full rounded-[2rem]"
           src={crafts[currentCraftIndex]?.preview}
           alt="project"
-          style={{
-            maxWidth: "100%",
-            maxHeight: "100%",
-            borderRadius: "2rem",
-          }}
         />
       </Modal>
-      <div
-        style={{
-          color: "white",
-          padding: "2rem 4rem 12rem",
-          columns: 3,
-          gap: "2rem",
-        }}
-      >
+      <div className="columns-3 pt-8 px-16 pb-48 gap-8 text-white">
         {crafts.map((project, index) => {
           return (
             <div className="craft" key={project.id}>
@@ -41,14 +38,9 @@ export const Crafts = () => {
                 }}
               >
                 <img
+                  className="max-w-full h-auto p-2 rounded-2xl"
                   src={project.preview}
                   alt="project"
-                  style={{
-                    maxWidth: "100%",
-                    height: "auto",
-                    padding: "0.4rem",
-                    borderRadius: "1rem",
-                  }}
                 />
               </div>
             </div>

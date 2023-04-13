@@ -12,7 +12,7 @@ export const Code = () => {
     >
       <div>
         <NavLink to="./toDoList">
-          <button className="button">To-do List</button>
+          <button className="Button">To-do List</button>
         </NavLink>
       </div>
     </div>

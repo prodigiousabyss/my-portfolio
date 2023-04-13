@@ -6,7 +6,7 @@ import "../Tooltip/Tooltip.css";
 export const Navbar = () => {
   return (
     <div
-      className="zoomNavbar"
+      className="zoomNavbar drop-shadow-2xl"
       style={{
         position: "fixed",
         bottom: "2rem",
@@ -17,7 +17,7 @@ export const Navbar = () => {
         width: "max-content",
         height: "6rem",
         borderRadius: "4rem",
-        backgroundColor: "#BDC0BE",
+        backgroundColor: "white",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

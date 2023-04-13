@@ -8,7 +8,7 @@ export const Tooltip = ({ children, delay, content }) => {
   const showToolTip = () => {
     timeout = setTimeout(() => {
       setActive(true);
-    }, delay || 400);
+    }, delay || 200);
   };
 
   const hideToolTip = () => {

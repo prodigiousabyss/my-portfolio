@@ -22,12 +22,12 @@ const iconMap = {
   Github: Github,
 };
 
-export const Icon = ({ name, style }) => {
+export const Icon = ({ name, ...props }) => {
   const Comp = iconMap[name];
 
   return (
     <div>
-      <Comp style={style} />
+      <Comp {...props} />
     </div>
   );
 };

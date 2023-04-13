@@ -11,12 +11,14 @@ export const Home = () => {
         justifyContent: "center",
       }}
     >
-      <p className="font-bold text-4xl leading-normal text-center " >
-        Hello! I am a ☺self-taught designer <br />good at creating graphics,
+      <p className="font-bold text-4xl leading-normal text-center ">
+        Hello! I am a ☺self-taught designer, <br />
+        learning web dev, good at creating graphics,
         <br />
-        video-editing and also skilled <br />in creating animations✌︎.
-        <br />I was working previously at {" "}
-        <a 
+        video-editing and also skilled <br />
+        in creating animations✌︎.
+        <br />I was working previously at{" "}
+        <a
           href="https://www.swiggy.com/swiggy-instamart"
           target="_blank"
           rel="noreferrer"

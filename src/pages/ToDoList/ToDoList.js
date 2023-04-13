@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./ToDoList.css";
+import { Icon } from "../../components/Icon";
 
 export const ToDoList = () => {
   const [toDo, setToDo] = useState("");
@@ -38,16 +39,12 @@ export const ToDoList = () => {
     }
   };
 
-  //   const deleteToDo = (text) => {
-  //     const newToDos = toDos.filter((toDo) => {
-  //       return toDo !== text;
-  //     });
-  //     setToDos(newToDos);
-  //   };
-
   return (
     <div className="main">
       <div className="xyz">
+        <p className="font-bold text-4xl leading-normal text-center">
+          What do you need to do today?
+        </p>
         <div>
           <input
             className="input"
@@ -60,11 +57,10 @@ export const ToDoList = () => {
             }}
             onKeyDown={handleKeyDown}
           />
-          <button className="button" onClick={addToDo}>
+          <button className="button ml-2" onClick={addToDo}>
             Add
           </button>
         </div>
-        {/* <label> */}
         <div className="list">
           {toDos.map((todo, index) => (
             <div
@@ -73,34 +69,20 @@ export const ToDoList = () => {
               }}
               key={index}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                }}
-              >
-                <input type="checkbox" />
-                <div
-                  style={{
-                    width: "60rem",
-                    color: "white",
-                    backgroundColor: "grey",
-                    padding: "0.6rem 1.2rem",
-                    wordBreak: "break-word",
-                    borderRadius: "0.4rem",
-                  }}
-                >
+              <div className="flex items-center justify-between">
+                <div className="w-[60rem] text-black bg-white py-2 px-6 rounded-lg">
                   {todo}
                 </div>
-                <button className="button" onClick={() => deleteToDo(index)}>
-                  Delete
-                </button>
+                <div onClick={() => deleteToDo(index)}>
+                  <Icon
+                    name="Cross"
+                    className="w-[1.5rem] h-[2rem] ml-[-2rem]"
+                  />
+                </div>
               </div>
             </div>
           ))}
         </div>
-        {/* </label> */}
       </div>
     </div>
   );
