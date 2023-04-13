@@ -12,8 +12,8 @@ export const Home = () => {
       }}
     >
       <p className="font-bold text-4xl leading-normal text-center ">
-        Hello! I am a ☺self-taught designer, <br />
-        learning web dev, good at creating graphics,
+        Hello! I am a ☺self-taught designer & <br />
+        web dev✔ good at creating graphics,
         <br />
         video-editing and also skilled <br />
         in creating animations✌︎.
