@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
 import "./ToDoList.css";
 import { Icon } from "../../components/Icon";
+import { useDate } from "../../hooks/useDate";
 
 export const ToDoList = () => {
   const [toDo, setToDo] = useState("");
   const [toDos, setToDos] = useState(getInitialTodos());
+
+  const { date, time, wish } = useDate();
 
   useEffect(() => {
     // storing todos items
@@ -41,10 +44,16 @@ export const ToDoList = () => {
 
   return (
     <div className="main">
-      <div className="xyz">
-        <p className="font-bold text-4xl leading-normal text-center">
-          What do you need to do today?
-        </p>
+      <div className="xyz ">
+        <div className="text-center text-slate-600">
+          {date}, {time}
+        </div>
+        <div className="font-bold text-4xl text-center ">
+          {wish}
+          {/* <p className="font-bold text-4xl leading-normal text-center">
+          Let's Create a
+        </p> */}
+        </div>
         <div>
           <input
             className="input"
@@ -70,7 +79,7 @@ export const ToDoList = () => {
               key={index}
             >
               <div className="flex items-center justify-between">
-                <div className="w-[60rem] text-black bg-white py-2 px-6 rounded-lg">
+                <div className="w-[60rem] text-black bg-neutral-200 py-2 px-6 rounded-lg">
                   {todo}
                 </div>
                 <div onClick={() => deleteToDo(index)}>

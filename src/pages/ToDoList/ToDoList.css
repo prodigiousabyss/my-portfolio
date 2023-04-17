@@ -20,11 +20,12 @@ textarea:focus, input:focus{
     color: white;
 }
 
+
 .xyz {
-    /* background-color: white; */
+    background-color: white;
     width: 80rem;
     border-radius: 2rem;
-    height: 35rem;
+    height: 38rem;
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
@@ -34,7 +35,7 @@ textarea:focus, input:focus{
 .input {
         width: 50rem;
         height: 2.4rem;
-        border: 1px solid #3F403F;
+        border: 1px solid grey;
         border-radius: 0.4rem;
         padding-left: 1rem;
         text-justify: auto;
@@ -43,8 +44,8 @@ textarea:focus, input:focus{
 }
 
 .button {
-        background-color:#e7e7e7; color: black; 
-        border: 1px solid #3F403F;
+        background-color: white ; color: black; 
+        border: 1px solid grey ;
         color: black;
         text-align: center;
         transition-duration: 0.4s;
