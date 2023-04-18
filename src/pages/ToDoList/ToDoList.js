@@ -7,7 +7,7 @@ export const ToDoList = () => {
   const [toDo, setToDo] = useState("");
   const [toDos, setToDos] = useState(getInitialTodos());
 
-  const { date, time, wish } = useDate();
+  const { date, time } = useDate();
 
   useEffect(() => {
     // storing todos items
@@ -47,12 +47,6 @@ export const ToDoList = () => {
       <div className="xyz ">
         <div className="text-center text-slate-600">
           {date}, {time}
-        </div>
-        <div className="font-bold text-4xl text-center ">
-          {wish}
-          {/* <p className="font-bold text-4xl leading-normal text-center">
-          Let's Create a
-        </p> */}
         </div>
         <div>
           <input

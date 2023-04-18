@@ -39,7 +39,6 @@ textarea:focus, input:focus{
         border-radius: 0.4rem;
         padding-left: 1rem;
         text-justify: auto;
-        margin-top: 3rem;
         margin-left: 11rem;
 }
 
@@ -61,7 +60,6 @@ textarea:focus, input:focus{
 }
 .list {
         width: 50rem;
-        margin-top: 1rem;
         color: white;
         height: 20rem;
         overflow-y: auto;
