@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
-import { Crafts } from "./pages/Crafts/Crafts";
+// import { Crafts } from "./pages/Crafts/Crafts";
 import { ToDoList } from "./pages/ToDoList";
 import { Code } from "./pages/Code/Code";
 import "./App.css";
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/designs" element={<Designs />} />
-        <Route path="/designs/crafts" element={<Crafts />} />
+        {/* <Route path="/designs/crafts" element={<Crafts />} /> */}
         <Route path="/codingProjects" element={<Code />} />
         <Route path="/codingProjects/toDoList" element={<ToDoList />} />
         {/* <Route path="*" /> */}
