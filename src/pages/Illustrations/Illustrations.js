@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Modal } from "../../components/Modal";
 import { crafts } from "../../constants/data";
 
-export const Crafts = () => {
+export const Illustrations = () => {
   const [show, setShow] = useState(false);
   const [currentCraftIndex, setCurrentCraftIndex] = useState();
 
