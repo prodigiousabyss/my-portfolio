@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -38,62 +39,32 @@ html, body {
   transform: scale(1.4);
 } */
 .zoom svg {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 .zoom svg:hover {
-  transform: scale(1.2);
-}
-
-.zoomNavbar {
-  padding-left: 2rem;
-  padding-right: 2rem;
-  transition: transform .2s;
-}
-.zoomNavbar:hover{
   transform: scale(1.2);
 }
 .active .dot {
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 50%;
-  background-color: #2F3331;
+  background-color: #2f3331;
   margin-top: 0.4rem;
   position: absolute;
   bottom: -1rem;
 }
 .craft {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
-.craft:hover{
+.craft:hover {
   transform: scale(0.9);
 }
-
-/* .gradient-background {
-  background: linear-gradient(102deg,#951318,#308fd3,#12333f,#a93802);
-  background-size: 240% 240%;
-  animation: gradient-animation 16s ease infinite; */
-  /* animation: noiseFX 2s steps(6) infinite; */
- 
-
-/* }
-
-@keyframes gradient-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-} */
 
 .Button {
   /* background-color: #DDDDDD;  */
   border-radius: 12px;
   width: 40rem;
-  border: 2px solid #3F403F;
+  border: 2px solid #3f403f;
   color: black;
   padding: 15px 32px;
   text-align: left;
@@ -101,10 +72,9 @@ html, body {
   display: inline-block;
   font-size: 1.4rem;
   transition-duration: 0.4s;
-  }
-  
-  .Button:hover {
-    background-color: black; 
-    color: white;
-  }
+}
 
+.Button:hover {
+  background-color: black;
+  color: white;
+}

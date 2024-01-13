@@ -1,12 +1,22 @@
 export const Cross = ({ ...props }) => {
   return (
     <svg
+      version="1.1"
       xmlns="http://www.w3.org/2000/svg"
-      id="Outline"
-      viewBox="0 0 24 24"
+      width="1024"
+      height="1024"
+      viewBox="0 0 1024 1024"
       {...props}
     >
-      <path d="M18,6h0a1,1,0,0,0-1.414,0L12,10.586,7.414,6A1,1,0,0,0,6,6H6A1,1,0,0,0,6,7.414L10.586,12,6,16.586A1,1,0,0,0,6,18H6a1,1,0,0,0,1.414,0L12,13.414,16.586,18A1,1,0,0,0,18,18h0a1,1,0,0,0,0-1.414L13.414,12,18,7.414A1,1,0,0,0,18,6Z" />
+      <path
+        fill="none"
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        stroke-miterlimit="4"
+        stroke-width="85.3333"
+        stroke="#000"
+        d="M48 976l464-464M512 512l464-464M512 512l-464-464M512 512l464 464"
+      ></path>
     </svg>
   );
 };

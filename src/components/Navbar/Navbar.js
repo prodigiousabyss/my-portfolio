@@ -5,68 +5,30 @@ import "../Tooltip/Tooltip.css";
 
 export const Navbar = () => {
   return (
-    <div
-      className="zoomNavbar drop-shadow-2xl"
-      style={{
-        position: "fixed",
-        bottom: "2rem",
-        left: "0",
-        right: "0",
-        marginLeft: "auto",
-        marginRight: "auto",
-        width: "max-content",
-        height: "6rem",
-        borderRadius: "4rem",
-        backgroundColor: "white",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        zIndex: "10",
-      }}
-    >
+    <div className="fixed bottom-8 mx-auto w-max h-20 z-20 flex items-center justify-center rounded-full left-0 right-0 bg-white px-4 pb-2 hover:scale-105 transition-all">
       <Tooltip content="Home">
         <span className="tooltiptext">
           <NavLink className="zoom" to="/">
-            <Icon name="Home" style={{ height: "2.8rem" }} />
+            <Icon name="Home" className="w-10 h-10" />
             <div className="dot"></div>
           </NavLink>
         </span>
       </Tooltip>
+      <Tooltip content="Projects">
+        <span className="tooltiptext"></span>
+        <NavLink className="zoom" to="/codingProjects">
+          <Icon name="Code" className="w-10 h-10" />
+          <div className="dot"></div>
+        </NavLink>
+      </Tooltip>
       <Tooltip content="Designs">
         <span className="tooltiptext"></span>
         <NavLink className="zoom" to="/designs">
-          <Icon name="Rocket" style={{ height: "2.8rem" }} />
+          <Icon name="Designs" className="w-10 h-10" />
           <div className="dot"></div>
         </NavLink>
       </Tooltip>
-      <Tooltip content="Code">
-        <span className="tooltiptext"></span>
-        <NavLink className="zoom" to="/codingProjects">
-          <Icon name="Code" style={{ height: "3.2rem" }} />
-          <div className="dot"></div>
-        </NavLink>
-      </Tooltip>
-      <div
-        style={{
-          width: "0.1rem",
-          height: "50%",
-          backgroundColor: "#5F6160",
-          marginLeft: "1rem",
-          marginRight: "1rem",
-        }}
-      ></div>
-      <Tooltip content="Behance">
-        <span className="tooltiptext"></span>
-        <a
-          className="zoom"
-          href="https://www.behance.net/prodigiousabyss"
-          target="_blank"
-          rel="noreferrer"
-        >
-          {" "}
-          <Icon name="Behance" style={{ width: "4rem", height: "4rem" }} />
-        </a>
-      </Tooltip>
+      <div className="w-0.5 rounded-full h-1/2 bg-gray-800 mx-4" />
       <Tooltip content="Github">
         <span className="tooltiptext"></span>
         <a
@@ -76,19 +38,31 @@ export const Navbar = () => {
           rel="noreferrer"
         >
           {" "}
-          <Icon name="Github" style={{ width: "3rem", height: "3rem" }} />
+          <Icon name="Github" className="w-10 h-10" />
         </a>
       </Tooltip>
-      <Tooltip content="Twitter">
+      <Tooltip content="LinkedIn">
         <span className="tooltiptext"></span>
         <a
           className="zoom"
-          href="https://twitter.com/prodigiousabyss"
+          href="https://linkedin.com/in/prodigiousabyss"
           target="_blank"
           rel="noreferrer"
         >
           {" "}
-          <Icon name="Twitter" style={{ width: "3rem", height: "3rem" }} />
+          <Icon name="LinkedIn" className="w-10 h-10" />
+        </a>
+      </Tooltip>
+      <Tooltip content="Behance">
+        <span className="tooltiptext"></span>
+        <a
+          className="zoom"
+          href="https://www.behance.net/prodigiousabyss"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+          <Icon name="Behance" className="w-10 h-10" />
         </a>
       </Tooltip>
     </div>

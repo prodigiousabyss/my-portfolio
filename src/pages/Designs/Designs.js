@@ -42,7 +42,7 @@ export const Designs = () => {
             setCurrentProjectIndex(0);
           }}
         >
-          My Shifts - A Swiggy delivery Executive App
+          My Shifts - A Swiggy delivery executive App
         </button>
         <SwiggyWork />
       </div>
