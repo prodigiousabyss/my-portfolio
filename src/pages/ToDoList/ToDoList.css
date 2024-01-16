@@ -1,67 +1,54 @@
-.main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%;
+textarea:focus,
+input:focus {
+  outline: none;
 }
 
-
-textarea:focus, input:focus{
-    outline: none;
-}
-
-.div {
-    display: flex;
-    align-items: center;
-}
 .ul li {
-    list-style-type: circle;
-    color: white;
+  list-style-type: circle;
+  color: white;
 }
-
 
 .xyz {
-    background-color: white;
-    width: 80rem;
-    border-radius: 2rem;
-    height: 38rem;
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-
+  background-color: white;
+  width: 80rem;
+  border-radius: 1rem;
+  height: 38rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .input {
-        width: 50rem;
-        height: 2.4rem;
-        border: 1px solid grey;
-        border-radius: 0.4rem;
-        padding-left: 1rem;
-        text-justify: auto;
-        margin-left: 11rem;
+  width: 50rem;
+  height: 2.4rem;
+  border: 1px solid grey;
+  border-radius: 0.4rem;
+  padding-left: 1rem;
+  text-justify: auto;
+  margin-left: 11rem;
 }
 
 .button {
-        background-color: white ; color: black; 
-        border: 1px solid grey ;
-        color: black;
-        text-align: center;
-        transition-duration: 0.4s;
-        width: 6rem;
-        height: 2.4rem;
-        border-radius: 0.4rem;
-        /* border: none; */
+  background-color: white;
+  color: black;
+  border: 1px solid grey;
+  color: black;
+  text-align: center;
+  transition-duration: 0.4s;
+  width: 6rem;
+  height: 2.4rem;
+  border-radius: 0.4rem;
+  /* border: none; */
 }
 
 .button:hover {
-    background-color: black; 
-    color: white;
+  background-color: black;
+  color: white;
 }
 .list {
-        width: 50rem;
-        color: white;
-        height: 20rem;
-        overflow-y: auto;
-        margin-left: 13rem;
+  width: 50rem;
+  color: white;
+  height: 20rem;
+  overflow-y: auto;
+  margin-left: 13rem;
 }

@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import "./ToDoList.css";
 import { Icon } from "../../components/Icon";
 import { useDate } from "../../hooks/useDate";
+import "./ToDoList.css";
 
 export const ToDoList = () => {
   const [toDo, setToDo] = useState("");
@@ -43,9 +43,9 @@ export const ToDoList = () => {
   };
 
   return (
-    <div className="main">
-      <div className="xyz ">
-        <div className="text-center text-slate-600">
+    <div className="flex flex-col w-full h-full items-center justify-center pb-36">
+      <div className="xyz">
+        <div className="text-center text-slate-600 font-semibold">
           {date}, {time}
         </div>
         <div>
@@ -76,11 +76,11 @@ export const ToDoList = () => {
                 <div className="w-[60rem] text-black bg-neutral-200 py-2 px-6 rounded-lg">
                   {todo}
                 </div>
-                <div onClick={() => deleteToDo(index)}>
-                  <Icon
-                    name="Cross"
-                    className="w-[1.5rem] h-[2rem] ml-[-2rem]"
-                  />
+                <div
+                  onClick={() => deleteToDo(index)}
+                  className="cursor-pointer"
+                >
+                  <Icon name="Cross" className="w-4 h-4 ml-[-2rem]" />
                 </div>
               </div>
             </div>

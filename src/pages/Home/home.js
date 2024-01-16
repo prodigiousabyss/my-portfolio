@@ -2,6 +2,7 @@ import React from "../../assets/images/react.svg";
 import Code from "../../assets/images/code.svg";
 import Figma from "../../assets/images/figma.svg";
 import JS from "../../assets/images/JS.svg";
+import Fresher from "../../assets/images/fresher.svg";
 
 export const Home = () => {
   return (
@@ -43,6 +44,11 @@ export const Home = () => {
             src={JS}
             className="w-20 h-auto absolute left-0 -bottom-8 -rotate-12"
             alt="js"
+          />
+          <img
+            src={Fresher}
+            className="w-44 rounded h-auto absolute right-72 -bottom-14 -rotate-6 shadow-lg"
+            alt="fresher"
           />
         </div>
       </div>
