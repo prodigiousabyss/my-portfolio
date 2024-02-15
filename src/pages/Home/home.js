@@ -10,7 +10,7 @@ export const Home = () => {
       <div className="w-4/5 h-2/3 relative flex items-center justify-center">
         <div className="flex flex-col relative items-center font-bold text-xs sm:text-sm md:text-lg lg:text-3xl">
           <span className="leading-loose">
-            Hello! I am Pooja, a self-taught
+            Hello! I am Pooja Ghanghas, a self-taught
           </span>
           <span className="px-6 py-2 bg-white inline-block rounded-2xl">
             🚀web developer & designer.
@@ -31,6 +31,18 @@ export const Home = () => {
             <span> </span>
             <span className="px-4 py-2  bg-white inline-block rounded-2xl ">
               full-time frontend opportunities.
+            </span>
+          </span>
+          <span className="leading-loose">
+            My Tech Stack is{" "}
+            <span className="underline underline-offset-1 decoration-emerald-500">
+              React JS,
+            </span>{" "}
+            <span className="underline underline-offset-1 decoration-yellow-500">
+              Tailwind CSS,
+            </span>{" "}
+            <span className="underline underline-offset-1 decoration-indigo-500">
+              JavaScript.
             </span>
           </span>
           {/* <img
