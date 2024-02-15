@@ -1,27 +1,27 @@
-
-
 .tooltip {
-    display: inline-block;
-    color: white;
-        background-color: black;
-        position: absolute;
-        top: -1.3rem;
-        text-align: center;
-        /* left: 2.4rem; */
-        border-radius: 0.3rem;
-        font-size: smaller;
-        width: 4rem;
-        padding: 0.3rem;
-        margin-left: 0.5rem;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: -1.6rem;
+  text-align: center;
+  /* left: 1.3rem; */
+  border-radius: 0.3rem;
+  font-family: DM Sans;
+  font-weight: bold;
+  font-size: smaller;
+  width: 4rem;
+  padding: 0.3rem;
+  margin-left: -0.7rem;
 }
 
 .tooltip:after {
-    content: " ";
-    position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
 }

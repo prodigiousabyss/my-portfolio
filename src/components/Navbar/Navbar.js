@@ -5,11 +5,14 @@ import "../Tooltip/Tooltip.css";
 
 export const Navbar = () => {
   return (
-    <div className="fixed bottom-8 mx-auto w-max h-20 z-20 flex items-center justify-center rounded-full left-0 right-0 bg-white px-4 pb-2 hover:scale-105 transition-all">
+    <div className="fixed bottom-8 mx-auto w-max space-x-4 lg:space-x-10 lg:w-max sm:w-15 h-16 lg:h-20 sm:h-18 z-20 flex items-center justify-center rounded-full left-0 right-0 bg-white px-6 lg:px-10 pb-2 lg:hover:scale-105 transition-all">
       <Tooltip content="Home">
         <span className="tooltiptext">
           <NavLink className="zoom" to="/">
-            <Icon name="Home" className="w-10 h-10" />
+            <Icon
+              name="Home"
+              className="w-6 lg:w-10 sm:w-8 h-auto lg:h-10 sm:h-8"
+            />
             <div className="dot"></div>
           </NavLink>
         </span>
@@ -17,18 +20,21 @@ export const Navbar = () => {
       <Tooltip content="Projects">
         <span className="tooltiptext"></span>
         <NavLink className="zoom" to="/codingProjects">
-          <Icon name="Code" className="w-10 h-10" />
+          <Icon name="Code" className="w-6 lg:w-10 sm:w-8 h-6 lg:h-10 sm:h-8" />
           <div className="dot"></div>
         </NavLink>
       </Tooltip>
       <Tooltip content="Designs">
         <span className="tooltiptext"></span>
         <NavLink className="zoom" to="/designs">
-          <Icon name="Designs" className="w-10 h-10" />
+          <Icon
+            name="Designs"
+            className="w-6 lg:w-10 sm:w-8 h-6 lg:h-10 sm:h-8"
+          />
           <div className="dot"></div>
         </NavLink>
       </Tooltip>
-      <div className="w-0.5 rounded-full h-1/2 bg-gray-800 mx-4" />
+      <div className="w-0.5 rounded-full h-1/2 bg-gray-800" />
       <Tooltip content="Github">
         <span className="tooltiptext"></span>
         <a
@@ -38,7 +44,10 @@ export const Navbar = () => {
           rel="noreferrer"
         >
           {" "}
-          <Icon name="Github" className="w-10 h-10" />
+          <Icon
+            name="Github"
+            className="w-6 lg:w-10 sm:w-8 h-6 lg:h-10 sm:h-8"
+          />
         </a>
       </Tooltip>
       <Tooltip content="LinkedIn">
@@ -50,7 +59,10 @@ export const Navbar = () => {
           rel="noreferrer"
         >
           {" "}
-          <Icon name="LinkedIn" className="w-10 h-10" />
+          <Icon
+            name="LinkedIn"
+            className="w-6 lg:w-10 sm:w-8 h-6 lg:h-10 sm:h-8"
+          />
         </a>
       </Tooltip>
       <Tooltip content="Behance">
@@ -62,7 +74,10 @@ export const Navbar = () => {
           rel="noreferrer"
         >
           {" "}
-          <Icon name="Behance" className="w-10 h-10" />
+          <Icon
+            name="Behance"
+            className="w-6 lg:w-10 sm:w-8 h-6 lg:h-10 sm:h-8"
+          />
         </a>
       </Tooltip>
     </div>

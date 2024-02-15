@@ -10,6 +10,7 @@ module.exports = {
       limelight: ["Limelight"],
       spline: ["Spline Sans Mono"],
       righteous: ["Righteous"],
+      dmSans: ["DM Sans"],
     },
   },
   plugins: [],
