@@ -14,7 +14,7 @@ export const Code = () => {
           rel="noopener noreferrer"
           className="w-[18rem] h-[34rem] bg-white hover:scale-95 transition-all rounded-3xl flex flex-col items-center justify-center px-8 bg-gradient-to-t from-black via-black to-white"
         >
-          <div className="w-[10rem] h-[10rem] bg-center mt-6">
+          <div className="w-[10rem] h-[10rem] bg-center">
             <img src={Carpool} alt="car" />
           </div>
           <div className="font-dmSans font-extrabold text-5xl text-white">
