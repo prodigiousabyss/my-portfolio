@@ -10,9 +10,9 @@
   font-family: DM Sans;
   font-weight: bold;
   font-size: smaller;
-  width: 4rem;
+  width: 6rem;
   padding: 0.3rem;
-  margin-left: -0.7rem;
+  margin-left: -1.7rem;
 }
 
 .tooltip:after {

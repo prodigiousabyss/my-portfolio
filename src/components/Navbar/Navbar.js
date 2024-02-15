@@ -17,7 +17,7 @@ export const Navbar = () => {
           </NavLink>
         </span>
       </Tooltip>
-      <Tooltip content="Projects">
+      <Tooltip content="Dev work">
         <span className="tooltiptext"></span>
         <NavLink className="zoom" to="/codingProjects">
           <Icon name="Code" className="w-6 lg:w-10 sm:w-8 h-6 lg:h-10 sm:h-8" />
