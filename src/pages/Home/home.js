@@ -6,13 +6,13 @@ import React from "../../assets/images/react.svg";
 
 export const Home = () => {
   return (
-    <div className="w-screen h-screen text-black flex items-center justify-center pb-20 font-dmSans">
+    <div className="w-screen h-screen text-black flex items-center justify-center pb-20 font-dmSans text-center">
       <div className="w-4/5 h-2/3 relative flex items-center justify-center">
         <div className="flex flex-col relative items-center font-bold text-xs sm:text-sm md:text-lg lg:text-3xl">
           <span className="leading-loose">
             Hello! I am Pooja Ghanghas, a self-taught
           </span>
-          <span className="px-6 py-2 bg-white inline-block rounded-2xl">
+          <span className="px-1 py-[0.1rem] lg:px-1 lg:py-1 bg-white inline-block rounded-sm lg:rounded-md">
             🚀web developer & designer.
           </span>
           <span className="leading-loose">
@@ -29,7 +29,7 @@ export const Home = () => {
           <span>
             👀 Actively looking for
             <span> </span>
-            <span className="px-4 py-2  bg-white inline-block rounded-2xl ">
+            <span className="px-1 py-[0.1rem] lg:px-1 lg:py-1 bg-white inline-block rounded-sm lg:rounded-md">
               full-time frontend opportunities.
             </span>
           </span>
